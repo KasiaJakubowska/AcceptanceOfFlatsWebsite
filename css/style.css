@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+}
+
+nav {
+  z-index: 1;
+}
+
+nav .navbar-nav {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+nav .navbar-brand {
+  color: #3453e4;
+  font-size: 2.2rem;
+}
+
+nav .nav-link {
+  color: white;
+  margin-right: 1.2rem;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+nav .nav-link:hover {
+  color: #3453e4;
+}
+
+nav .fa-bars {
+  padding: 1rem;
+}
+
+nav .navbar-toggler {
+  color: white;
+  font-size: 2.2rem;
+}
+
+header {
+  color: white;
+}
+
+header h1 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+
+header .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  z-index: 5;
+}
+
+header .btn-outline-light {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: bold;
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+header .btn-outline-light:hover {
+  color: #3453e4;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  -webkit-transition: translateX(-50%);
+  transition: translateX(-50%);
+  bottom: 1rem;
+  padding: 1rem 0;
+  color: #3453e4;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
