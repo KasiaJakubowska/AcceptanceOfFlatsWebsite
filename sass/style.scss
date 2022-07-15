@@ -12,11 +12,27 @@ html {
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: #333;
+}
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+.underline {
+	margin: 0 auto;
+	width: 7rem;
+	height: 0.4rem;
+	background-color: #3453e4;
 }
 
 //NAV
 nav {
+	transition: background-color 0.6s;
 	z-index: 1;
 	.navbar-nav {
 		font-size: 2.2rem;
@@ -49,13 +65,12 @@ header {
 	h1 {
 		text-transform: uppercase;
 		padding-bottom: 1rem;
-		font-size: 3rem;
 	}
 
 	.hero-img {
 		position: relative;
 		height: 100vh;
-		background-image: url("../img/hero.jpg");
+		background-image: url("../img/hero-mini.jpg");
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -100,5 +115,153 @@ header {
 		padding: 1rem 0;
 		color: #3453e4;
 		font-size: 3rem;
+	}
+}
+
+//ABOUT US
+
+#aboutus {
+	scroll-margin-top: 7.3rem;
+}
+
+.aboutus-box {
+	margin-top: 7rem;
+
+	.cards-option {
+		margin: 1rem 0;
+		box-shadow: 5px 5px 10px #2e2e2e2e;
+		overflow: hidden;
+
+		.cards-option-img {
+			width: 100%;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		.cards-option-info {
+			padding: 3rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: justify;
+			.cards-option-heading {
+				margin-bottom: 0.5rem;
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+//MEDIA
+
+@media (min-width: 360px) {
+	header {
+		h1 {
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 1.4rem;
+		}
+	}
+
+	.aboutus-box {
+		.cards-option {
+			.cards-option-info {
+				font-size: 1.2rem;
+				.cards-option-heading {
+					margin-bottom: 0.5rem;
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	header {
+		h1 {
+			font-size: 2.5rem;
+		}
+		h2 {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		h1 {
+			font-size: 2.8rem;
+		}
+		h2 {
+			font-size: 2rem;
+		}
+	}
+	.aboutus-box {
+		.cards-option {
+			display: flex;
+			margin: 2rem 0;
+			width: 100%;
+
+			.cards-option-img {
+				width: 50%;
+				height: auto;
+			}
+			.cards-option-img-right {
+				order: 1;
+			}
+
+			.cards-option-info {
+				font-size: 1.6rem;
+
+				.cards-option-heading {
+					margin-bottom: 0.5rem;
+					font-size: 3.6rem;
+				}
+				.cards-option-text {
+					padding-top: 2rem;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	header {
+		h1 {
+			font-size: 3.2rem;
+		}
+		h2 {
+			font-size: 2.2rem;
+		}
+
+		.hero-img {
+			background-image: url("../img/hero-big.jpg");
+		}
+	}
+
+	.aboutus-box {
+		.cards-option {
+			.cards-option-info {
+				.cards-option-text {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.aboutus-box {
+		.cards-option {
+			.cards-option-info {
+				.cards-option-text {
+					font-size: 1.6rem;
+				}
+			}
+		}
 	}
 }
