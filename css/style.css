@@ -149,7 +149,7 @@ header .fa-chevron-down {
 }
 
 .aboutus-box {
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .aboutus-box .cards-option {
@@ -192,12 +192,18 @@ header .fa-chevron-down {
   font-size: 1.3rem;
 }
 
+#prices {
+  scroll-margin-top: 6rem;
+}
+
 .table {
   font-size: 2rem;
   text-align: center;
+  margin-top: 5rem;
 }
 
-.table td, .table th {
+.table td,
+.table th {
   padding: 1.5rem;
 }
 
@@ -211,6 +217,51 @@ header .fa-chevron-down {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+}
+
+#contact {
+  scroll-margin-top: 7.3rem;
+}
+
+.content-contact {
+  margin-top: 5rem;
+}
+
+.contact-list {
+  font-size: 1.8rem;
+  padding-right: 5rem;
+}
+
+.contact-list li {
+  padding: 1.2rem;
+}
+
+.contact-list li:nth-last-child(1) {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+
+.contact-list li:nth-last-child(1):hover {
+  color: #3453e4;
+}
+
+.contact-list .green-tick {
+  color: green;
+  padding: 1rem;
+}
+
+.form-contact {
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+
+.form-contact .form-control {
+  font-size: 1.6rem;
+}
+
+.btn-contact {
+  font-size: 1.6rem;
 }
 
 @media (min-width: 360px) {

@@ -144,11 +144,12 @@
 					</div>
 				</div>
 			</section>
+			<!-- prices section -->
 			<section id="prices" class="prices py-5">
 				<div class="container">
 					<h2 class="title">Cennik</h2>
 					<div class="underline"></div>
-					<table class="table my-5">
+					<table class="table">
 						<thead class="table-blue">
 							<tr>
 								<th scope="col"><i class="fa-solid fa-bell-concierge"></i></th>
@@ -161,27 +162,31 @@
 								<th scope="row"><i class="fas fa-solid fa-building"></i></th>
 								<td>Odbiór techniczny mieszkania od dewelopera</td>
 								<td>xxxx zł</td>
-							
 							</tr>
 							<tr>
 								<th scope="row"><i class="fas fa-solid fa-house"></i></th>
 								<td>Odbiór domu od dewelopera</td>
 								<td>xxxx zł</td>
-							
 							</tr>
 							<tr>
-								<th scope="row"><i class="fas fa-solid fa-magnifying-glass"></i></th>
+								<th scope="row">
+									<i class="fas fa-solid fa-magnifying-glass"></i>
+								</th>
 								<td>Inspekcja mieszkania na rynku wtórnym lub pierwotnym</td>
 								<td>xxxx zł</td>
 							</tr>
 							<tr>
-								<th scope="row"><i class="fas fa-solid fa-house-circle-check"></i></th>
+								<th scope="row">
+									<i class="fas fa-solid fa-house-circle-check"></i>
+								</th>
 								<td>Audyt po remoncie</td>
 								<td>xxxx zł</td>
 							</tr>
 							<tr>
-								<th scope="row"><i class="fas fa-solid fa-helmet-safety"></i></th>
-								<td>Usługi kierownika budowy </td>
+								<th scope="row">
+									<i class="fas fa-solid fa-helmet-safety"></i>
+								</th>
+								<td>Usługi kierownika budowy</td>
 								<td>xxxx zł</td>
 							</tr>
 							<tr>
@@ -189,11 +194,147 @@
 								<td>Nadzór inwestorski</td>
 								<td>xxxx zł</td>
 							</tr>
-							
 						</tbody>
 					</table>
 				</div>
 			</section>
+			<!-- CONTACT -->
+			<section id="contact" class="contact py-5">
+				<div class="container container-contact">
+					<h2 class="title">Kontakt</h2>
+					<div class="underline"></div>
+					<div class="row">
+						<div class="content-contact col-md-12 col-lg-6">
+							<div
+								data-aos="fade-up"
+								data-aos-offset="300"
+								data-aos-delay="200"
+								class="box-skills"
+							>
+								<ul class="contact-list list-unstyled">
+									<li data-aos="fade-up" data-aos-delay="800">
+										<span class="green-tick">✔</span> Nie chcesz dać się
+										naciągnąć na niepotrzebne koszty?
+									</li>
+									<li data-aos="fade-up" data-aos-delay="1000">
+										<span class="green-tick">✔</span> Kupiłeś mieszkanie i
+										potrzebujesz pomocy profesjonalistów w odbiorach?
+									</li>
+									<li data-aos="fade-up" data-aos-delay="1200">
+										<span class="green-tick">✔</span> Potrzebujesz doradztwa
+										technicznego w zakresie doboru materiałów?
+									</li>
+									<li data-aos="fade-up" data-aos-delay="1400">
+										<span class="green-tick">✔</span> Chcesz sprawdzić swoją
+										ekipę wykończeniową?
+									</li>
+									<li data-aos="fade-up" data-aos-delay="1600">
+										<span class="green-tick">✔</span> A może budujesz dom i
+										potrzebujesz kierownika budowy?
+									</li>
+									<li data-aos="fade-up" data-aos-delay="1800">
+										<strong>Dobrze trafiłeś! Skontaktuj się z nami!</strong>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="form-contact col-md-12 col-lg-6">
+							<!-- Bootstrap 5 starter form -->
+							<form id="contactForm" action="https://formsubmit.io/send/k.jakubowska1618@gmail.com" method="POST">
+								<!-- Name input -->
+								<div class="mb-3">
+									<label class="form-label" for="name">Imię i Nazwisko</label>
+									<input
+										class="form-control"
+										id="name"
+										type="text"
+										placeholder="Imię i Nazwisko"
+										data-sb-validations="required"
+									/>
+									<div
+										class="invalid-feedback"
+										data-sb-feedback="name:required"
+									>
+										Imię i Nazwisko jest wymagane.
+									</div>
+								</div>
+
+								<!-- Email address input -->
+								<div class="mb-3">
+									<label class="form-label" for="emailAddress"
+										>Adres E-mail</label
+									>
+									<input
+										class="form-control"
+										id="emailAddress"
+										type="email"
+										placeholder="Adres E-mail"
+										data-sb-validations="required, email"
+									/>
+									<div
+										class="invalid-feedback"
+										data-sb-feedback="emailAddress:required"
+									>
+										Adres e-mail jest wymagany.
+									</div>
+									<div
+										class="invalid-feedback"
+										data-sb-feedback="emailAddress:email"
+									>
+										Adres e-mail jest nieprawidłowy.
+									</div>
+								</div>
+
+								<!-- Message input -->
+								<div class="mb-3">
+									<label class="form-label" for="message">Wiadomość</label>
+									<textarea
+										class="form-control"
+										id="message"
+										type="text"
+										placeholder="Wiadomość"
+										style="height: 10rem"
+										data-sb-validations="required"
+									></textarea>
+									<div
+										class="invalid-feedback"
+										data-sb-feedback="message:required"
+									>
+										Wiadomość jest wymagana.
+									</div>
+								</div>
+
+								<!-- Form submissions success message -->
+								<div class="d-none" id="submitSuccessMessage">
+									<div class="text-center mb-3">
+										Wiadomość wysłana pomyślnie!
+									</div>
+								</div>
+
+								<!-- Form submissions error message -->
+								<div class="d-none" id="submitErrorMessage">
+									<div class="text-center text-danger mb-3">
+										Błąd wysłania wiadomości!
+									</div>
+								</div>
+
+								<!-- Form submit button -->
+								<div class="d-grid">
+									<button
+										class="btn btn-primary btn-lg disabled btn-contact"
+										id="submitButton"
+										type="submit"
+									>
+										Wyślij
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		
 		</main>
 
 		<script
@@ -201,6 +342,7 @@
 			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

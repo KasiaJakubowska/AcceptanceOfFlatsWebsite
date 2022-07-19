@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -6,8 +5,6 @@
 	margin: 0;
 	padding: 0;
 }
-
-
 
 html {
 	font-size: 62.5%;
@@ -56,7 +53,7 @@ nav {
 	.nav-link:hover {
 		color: #3453e4;
 	}
-	
+
 	.fa-bars {
 		padding: 1rem;
 	}
@@ -131,7 +128,7 @@ header {
 }
 
 .aboutus-box {
-	margin-top: 7rem;
+	margin-top: 5rem;
 
 	.cards-option {
 		margin: 1rem 0;
@@ -161,19 +158,24 @@ header {
 }
 
 //PRICING
+#prices {
+	scroll-margin-top: 6rem;
+}
 
-.table{
+.table {
 	font-size: 2rem;
 	text-align: center;
-	td, th{
+	margin-top: 5rem;
+	td,
+	th {
 		padding: 1.5rem;
 	}
-	.fas:hover{
+	.fas:hover {
 		color: #3453e4;
 	}
 }
 
-.table-blue{
+.table-blue {
 	background-color: #3453e4;
 	color: white;
 	text-transform: uppercase;
@@ -181,7 +183,46 @@ header {
 	text-align: center;
 }
 
+//CONTACT
+#contact {
+	scroll-margin-top: 7.3rem;
+}
 
+.content-contact {
+	margin-top: 5rem;
+}
+.contact-list {
+	font-size: 1.8rem;
+	padding-right: 5rem;
+	li {
+		padding: 1.2rem;
+	}
+	li:nth-last-child(1) {
+		text-align: right;
+		margin-top: 1rem;
+		font-size: 2.2rem;
+	}
+	li:nth-last-child(1):hover {
+		color: #3453e4;
+	}
+
+	.green-tick {
+		color: green;
+		padding: 1rem;
+	}
+	
+}
+
+.form-contact{
+	margin-top: 6rem;
+	font-size: 2rem;
+	.form-control{
+		font-size: 1.6rem;
+	}
+}
+.btn-contact{
+	font-size: 1.6rem;
+}
 
 //MEDIA
 
@@ -195,7 +236,7 @@ header {
 		}
 	}
 
-	.title{
+	.title {
 		font-size: 3rem;
 	}
 
@@ -211,10 +252,9 @@ header {
 		}
 	}
 
-	.table{
+	.table {
 		font-size: 1.6rem;
 	}
-
 }
 
 @media (min-width: 576px) {
@@ -238,7 +278,7 @@ header {
 		}
 	}
 
-	.title{
+	.title {
 		font-size: 4rem;
 	}
 
