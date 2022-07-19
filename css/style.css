@@ -22,7 +22,6 @@ body {
 .title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 4rem;
 }
 
 .underline {
@@ -42,6 +41,10 @@ nav .navbar-nav {
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+
+nav .navbar-nav .nav-link.active {
+  color: #3453e4;
 }
 
 nav .navbar-brand {
@@ -189,6 +192,27 @@ header .fa-chevron-down {
   font-size: 1.3rem;
 }
 
+.table {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.table td, .table th {
+  padding: 1.5rem;
+}
+
+.table .fas:hover {
+  color: #3453e4;
+}
+
+.table-blue {
+  background-color: #3453e4;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media (min-width: 360px) {
   header h1 {
     font-size: 2rem;
@@ -196,12 +220,18 @@ header .fa-chevron-down {
   header h2 {
     font-size: 1.4rem;
   }
+  .title {
+    font-size: 3rem;
+  }
   .aboutus-box .cards-option .cards-option-info {
     font-size: 1.2rem;
   }
   .aboutus-box .cards-option .cards-option-info .cards-option-heading {
     margin-bottom: 0.5rem;
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  .table {
+    font-size: 1.6rem;
   }
 }
 
@@ -220,6 +250,9 @@ header .fa-chevron-down {
   }
   header h2 {
     font-size: 2rem;
+  }
+  .title {
+    font-size: 4rem;
   }
   .aboutus-box .cards-option {
     display: -webkit-box;
@@ -241,8 +274,7 @@ header .fa-chevron-down {
     font-size: 1.6rem;
   }
   .aboutus-box .cards-option .cards-option-info .cards-option-heading {
-    margin-bottom: 0.5rem;
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
   .aboutus-box .cards-option .cards-option-info .cards-option-text {
     padding-top: 2rem;
@@ -260,12 +292,18 @@ header .fa-chevron-down {
   header .hero-img {
     background-image: url("../img/hero-big.jpg");
   }
+  .aboutus-box .cards-option .cards-option-info .cards-option-heading {
+    font-size: 3.2rem;
+  }
   .aboutus-box .cards-option .cards-option-info .cards-option-text {
     font-size: 1.4rem;
   }
 }
 
 @media (min-width: 1200px) {
+  .aboutus-box .cards-option .cards-option-info .cards-option-heading {
+    font-size: 3.6rem;
+  }
   .aboutus-box .cards-option .cards-option-info .cards-option-text {
     font-size: 1.6rem;
   }

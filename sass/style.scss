@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -5,6 +6,8 @@
 	margin: 0;
 	padding: 0;
 }
+
+
 
 html {
 	font-size: 62.5%;
@@ -20,7 +23,6 @@ body {
 .title {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 4rem;
 }
 
 .underline {
@@ -38,6 +40,9 @@ nav {
 		font-size: 2.2rem;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		.nav-link.active {
+			color: #3453e4;
+		}
 	}
 	.navbar-brand {
 		color: #3453e4;
@@ -51,6 +56,7 @@ nav {
 	.nav-link:hover {
 		color: #3453e4;
 	}
+	
 	.fa-bars {
 		padding: 1rem;
 	}
@@ -154,6 +160,29 @@ header {
 	}
 }
 
+//PRICING
+
+.table{
+	font-size: 2rem;
+	text-align: center;
+	td, th{
+		padding: 1.5rem;
+	}
+	.fas:hover{
+		color: #3453e4;
+	}
+}
+
+.table-blue{
+	background-color: #3453e4;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
 //MEDIA
 
 @media (min-width: 360px) {
@@ -166,17 +195,26 @@ header {
 		}
 	}
 
+	.title{
+		font-size: 3rem;
+	}
+
 	.aboutus-box {
 		.cards-option {
 			.cards-option-info {
 				font-size: 1.2rem;
 				.cards-option-heading {
 					margin-bottom: 0.5rem;
-					font-size: 3rem;
+					font-size: 2rem;
 				}
 			}
 		}
 	}
+
+	.table{
+		font-size: 1.6rem;
+	}
+
 }
 
 @media (min-width: 576px) {
@@ -199,6 +237,11 @@ header {
 			font-size: 2rem;
 		}
 	}
+
+	.title{
+		font-size: 4rem;
+	}
+
 	.aboutus-box {
 		.cards-option {
 			display: flex;
@@ -217,8 +260,7 @@ header {
 				font-size: 1.6rem;
 
 				.cards-option-heading {
-					margin-bottom: 0.5rem;
-					font-size: 3.6rem;
+					font-size: 3rem;
 				}
 				.cards-option-text {
 					padding-top: 2rem;
@@ -246,6 +288,9 @@ header {
 	.aboutus-box {
 		.cards-option {
 			.cards-option-info {
+				.cards-option-heading {
+					font-size: 3.2rem;
+				}
 				.cards-option-text {
 					font-size: 1.4rem;
 				}
@@ -258,6 +303,9 @@ header {
 	.aboutus-box {
 		.cards-option {
 			.cards-option-info {
+				.cards-option-heading {
+					font-size: 3.6rem;
+				}
 				.cards-option-text {
 					font-size: 1.6rem;
 				}
