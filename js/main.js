@@ -18,4 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	window.addEventListener("scroll", addShadow);
 });
 
+//NAVBAR ACTIVE COLOR
+
+navbar = document.querySelector(".navbar-nav").querySelectorAll(".nav-link");
+console.log(navbar);
+navbar.forEach((element) => {
+	element.addEventListener("click", function () {
+		navbar.forEach((nav) => nav.classList.remove("active"));
+		this.classList.add("active");
+	});
+});
 
