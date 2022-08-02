@@ -169,6 +169,8 @@ header {
 	td,
 	th {
 		padding: 1.5rem;
+		display: table-cell;
+		vertical-align: middle;
 	}
 	.fas:hover {
 		color: #3453e4;
@@ -210,18 +212,53 @@ header {
 		color: green;
 		padding: 1rem;
 	}
-	
 }
 
-.form-contact{
+.form-contact {
 	margin-top: 6rem;
 	font-size: 2rem;
-	.form-control{
+	background-color: #ddd;
+	padding: 2rem;
+	border-radius: 2%;
+
+	.form-check {
+		padding-bottom: 2rem;
+	}
+	.form-control {
 		font-size: 1.6rem;
 	}
 }
-.btn-contact{
+.btn-contact {
 	font-size: 1.6rem;
+}
+
+.invalid {
+	border: 1px solid red;
+}
+
+.mb-2 {
+	margin-bottom: 20px;
+}
+
+.mb-4 {
+	margin-bottom: 40px;
+}
+
+p {
+	font-size: 20px;
+}
+
+.contact-description {
+	margin-bottom: 40px;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: 6px;
+}
+.hide {
+	opacity: 0;
 }
 
 //MEDIA

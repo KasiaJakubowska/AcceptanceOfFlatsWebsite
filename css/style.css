@@ -205,6 +205,8 @@ header .fa-chevron-down {
 .table td,
 .table th {
   padding: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .table .fas:hover {
@@ -254,6 +256,13 @@ header .fa-chevron-down {
 .form-contact {
   margin-top: 6rem;
   font-size: 2rem;
+  background-color: #ddd;
+  padding: 2rem;
+  border-radius: 2%;
+}
+
+.form-contact .form-check {
+  padding-bottom: 2rem;
 }
 
 .form-contact .form-control {
@@ -262,6 +271,36 @@ header .fa-chevron-down {
 
 .btn-contact {
   font-size: 1.6rem;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.contact-description {
+  margin-bottom: 40px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.hide {
+  opacity: 0;
 }
 
 @media (min-width: 360px) {
