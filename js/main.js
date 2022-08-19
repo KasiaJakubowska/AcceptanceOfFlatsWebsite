@@ -36,14 +36,16 @@ const surnameInput = document.querySelector("input[name='surname']");
 const emailInput = document.querySelector("input[name='email']");
 const phoneInput = document.querySelector("input[name='phone']");
 const messageInput = document.querySelector("textarea[name='message']");
+const checkbox = document.querySelector("input[name='check']");
 
 nameInput.isValid = () => !!nameInput.value;
 surnameInput.isValid = () => !!surnameInput.value;
 emailInput.isValid = () => isValidEmail(emailInput.value);
 phoneInput.isValid = () => isValidPhone(phoneInput.value);
 messageInput.isValid = () => !!messageInput.value;
+checkbox.isValid = () => !!checkbox.value;
 
-const inputFields = [nameInput, surnameInput, emailInput, phoneInput, messageInput];
+const inputFields = [nameInput, surnameInput, emailInput, phoneInput, messageInput, checkbox];
 
 const isValidEmail = (email) => {
 	const re =

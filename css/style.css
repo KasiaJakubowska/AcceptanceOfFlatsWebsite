@@ -303,6 +303,18 @@ p {
   opacity: 0;
 }
 
+footer .footer-text h2 {
+  font-size: 1.8rem;
+}
+
+footer .footer-text p {
+  font-size: 1.5rem;
+}
+
+footer .copy {
+  font-size: 1.8rem;
+}
+
 @media (min-width: 360px) {
   header h1 {
     font-size: 2rem;

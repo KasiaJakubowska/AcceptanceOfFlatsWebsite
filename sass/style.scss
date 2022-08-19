@@ -261,6 +261,20 @@ p {
 	opacity: 0;
 }
 
+//FOOTER
+footer{
+	.footer-text{
+		h2{
+			font-size: 1.8rem;
+		}
+		p{
+			font-size: 1.5rem;
+		}
+	}
+	.copy{
+		font-size: 1.8rem;
+	}
+}
 //MEDIA
 
 @media (min-width: 360px) {
